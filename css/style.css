@@ -1,0 +1,38 @@
+header{
+    height: 8vh;
+    background-color: aquamarine;
+    grid-template-columns: 40vw, 20vw, 40vw;
+}
+
+body{
+    margin: 0px
+}
+
+div{
+    margin: 8px;
+    height: 122vh;
+    display: grid;
+}
+
+footer{
+    height: 20vh;
+    background-color: cornflowerblue;
+}
+
+.commissioner-vanlig {
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+}
+
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
