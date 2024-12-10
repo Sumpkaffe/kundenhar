@@ -1,25 +1,50 @@
+h1{
+ font-family: Fugaz One;
+}
 header{
     height: 8vh;
     background-color: aquamarine;
-    grid-template-columns: 40vw, 20vw, 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: hd;
+    
+}
+#bakgrund{
+    grid-area: bg;
 }
 
 body{
     margin: 0px
 }
 
-div{
+#container {
+    display: grid;
     margin: 8px;
     height: 122vh;
-    display: grid;
+    width: 100%;
+    grid-template-rows: 35vh 40vh 12vh 35vh;
+    grid-template-columns: 5vw 10vw 10vw auto 15vw 15vw;
+    grid-template-areas:
+    'im im im im im im'
+    '_ _ mn mn mn _'
+    '_ _ _ _ _ _'
+    ''
+    ;
+}
+
+main{
+    font-family: Commissioner;
+    grid-area: mn;
 }
 
 footer{
     height: 20vh;
     background-color: cornflowerblue;
+    grid-area: ft;
 }
 
-.commissioner-vanlig {
+commissioner-vanlig {
   font-family: "Commissioner", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
