@@ -10,7 +10,24 @@ h1{
  color: var(--dark);
 }
 
-header{
+h2{
+    font-family: Fugaz One;
+    color: var(--dark);
+    align-items: flex-end;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    padding: 15px;
+    background-color: var(--base);
+  }
+
+header {
     height: 8vh;
     background-color: var(--base);
     display: flex;
@@ -33,14 +50,28 @@ body{
     height: 122vh;
     width: 100%;
     background-color: var(--light);
-    grid-template-rows: 35vh 40vh 12vh 35vh;
+    grid-template-rows: 35vh 40vh 12vh 23vh 12vh;
     grid-template-columns: 5vw 10vw 10vw auto 15vw 15vw;
     grid-template-areas:
-    '. . . . . .'
+    'im im im im im im'
     '. . mn mn mn .'
     '. . . . . .'
-    '. . . . as as'
+    '. im2 im2 . as as'
+    '. h2 h2 . as as'
     ;
+}
+
+#image{
+    grid-area: im;
+    display: grid;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#image2{
+    display: grid;
+    grid-area: im2;
+    height: 23vh;
 }
 
 main{
@@ -61,9 +92,10 @@ aside{
 footer{
     height: 20vh;
     background-color: var(--dark);
-    color: var(--light);
     grid-area: ft;
-    padding: 30px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 commissioner-vanlig {
@@ -82,4 +114,3 @@ commissioner-vanlig {
     font-weight: 400;
     font-style: normal;
   }
-  
